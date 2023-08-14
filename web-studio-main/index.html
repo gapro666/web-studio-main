@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>WebStudio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header container">
+        <a href="index.html" class="logo"><span class="leters">Web</span>Studio</a>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="">Студия</a></li> 
+                <li class="nav-item"><a href="portfolio.html" class="">Портфолио</a></li>
+                <li class="nav-item"><a href="#" class="">Контакты</a></li>
+            </ul>
+        </nav>
+            <ul class="contact-list">
+                <li class="contact-item"><a href="mailto:info@devstudio.com" class=""><svg class="contact-icon" width="16" height="12"><use href="images/symbol-defs.svg#icon-mail"></use></svg>info@devstudio.com</a></li>
+                <li class="contact-item"><a href="tel:+38 096 111 11 11" class="contact-linc"><svg class="contact-icon" width="10" height="16"><use href="images/symbol-defs.svg#icon-phone"></use></svg>+38 096 111 11 11</a></li>
+            </ul>
+    </header>
+    <main>
+        <section class="hero">
+            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>   
+            <button class="hero-button" aria-activedescendant="open" >Заказать услугу</button>
+            <button type="button" class="btn" data-action="open-modal">Відкрити модалку</button>
+            <div class="backdrop">
+              <div class="modal">
+                <button type="button" class="button" data-action="close-modal">X</button>
+                <h4 class="Модальное-окно">Оставьте свои данные, мы вам перезвоним</h4>
+                <form>
+                  <label>
+                    Имя
+                    <input type="text" name="username" />
+                  </label>
+                  <label>
+                    Почта
+                    <input type="tel" name="phone" />
+                  </label>
+                  <label>
+                    Почта
+                    <input type="email" name="email" />
+                  </label>
+                  <label>
+                    Комментарий
+                    <textarea name="feedback" rows="5" placeholder="Enter your message here..."></textarea>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="" checked />
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href="#">Условия договора</a>
+                  </label>
+                  <button class="hero-button">Отправить</button>
+                </form>
+              </div>
+            </div>
+            <script type="module" src="modal.js"></script>
+        </section>
+        <section class="description container">
+            <ul class="list-inline">
+                <li class="inline"><div class="description-wrap"><svg class="description-icon" width="65" height="70"><use href="images/symbol-defs.svg#icon-antenna"></use></svg></div><h3 class="subject">Внимание к деталям</h3><p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li>
+                <li class="inline"><div class="description-wrap"><svg class="description-icon" width="67" height="70"><use href="images/symbol-defs.svg#icon-clock"></use></svg></div><h3 class="subject">Пунктуальность</h3><p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
+                <li class="inline"><div class="description-wrap"><svg class="description-icon" width="70" height="54"><use href="images/symbol-defs.svg#icon-diagram"></use></svg></div><h3 class="subject">Планирование</h3><p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>
+                <li class="inline"><div class="description-wrap"><svg class="description-icon" width="70" height="70"><use href="images/symbol-defs.svg#icon-astronaut"></use></svg></div><h3 class="subject">Современные технологии</h3><p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
+            </ul>
+        </section>
+        <section class="work container">
+            <h2>Чем мы занимаемся</h2>
+            <ul class="list-work">
+                <li class="inline"><img src="images/box 1.jpg" alt="мы пишем код" width="370" height="294"></li>
+                <li class="inline"><img src="images/box 2.jpg" alt="мы адоптироем код под телефоны" width="370" height="294"></li>
+                <li class="inline"><img src="images/box 3.jpg" alt="мы стилизирюем код" width="370" height="294"></li>
+            </ul>
+        </section>
+        <section class="team">
+        <div class="container ">
+            <h2>Наша команда</h2>
+            <ul class="list-team">
+                <li class="box">
+                    <img src="images/img (13).jpg" alt="Игорь Демьяненко Product Designer" width="270" height="260">
+                    <h3 class="heading" >Игорь Демьяненко</h3>
+                    <p class="texts">Product Designer</p>
+                    <ul class="social_list_team">
+                        <li class="social_item_team">
+                            <a href="https://www.instagram.com/" class="social_link_team">
+                                <svg class="social_icon_team" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-insta" ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social_item_team">
+                            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin" class="social_link_team">
+                                <svg class="social_icon_team" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-twit"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social_item_team">
+                            <a href="https://www.facebook.com/" class="social_link_team">
+                                <svg class="social_icon_team" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social_item_team">
+                            <a href="https://www.linkedin.com/" class="social_link_team">
+                                <svg class="social_icon_team" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="box">
+                    <img src="images/img (14).jpg" alt="Ольга Репина Frontend Developer" width="270" height="260">
+                    <h3 class="heading">Ольга Репина</h3>
+                    <p class="texts">Frontend Developer</p>
+                    <ul class="social_list_team">
+                        <li class="social_item_team">
+                            <a href="https://www.instagram.com/" class="social_link_team">
+                                <svg class="social_icon_team" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-insta" ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social_item_team">
+                            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin" class="social_link_team">
+                                <svg class="social_icon_team" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-twit"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social_item_team">
+                            <a href="https://www.facebook.com/" class="social_link_team">
+                                <svg class="social_icon_team" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social_item_team">
+                            <a href="https://www.linkedin.com/" class="social_link_team">
+                                <svg class="social_icon_team" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="box">
+                    <img src="images/img (15).jpg" alt="Николай Тарасов Marketing" width="270" height="260">
+                    <h3 class="heading">Николай Тарасов</h3>
+                    <p class="texts">Marketing</p>
+                    <ul class="social_list_team">
+                        <li class="social_item_team">
+                            <a href="https://www.instagram.com/" class="social_link_team">
+                                <svg class="social_icon_team" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-insta" ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social_item_team">
+                            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin" class="social_link_team">
+                                <svg class="social_icon_team" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-twit"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social_item_team">
+                            <a href="https://www.facebook.com/" class="social_link_team">
+                                <svg class="social_icon_team" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social_item_team">
+                            <a href="https://www.linkedin.com/" class="social_link_team">
+                                <svg class="social_icon_team" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="box">
+                    <img src="images/img (16).jpg" alt="Михаил Ермаков UI Designer" width="270" height="260">
+                    <h3 class="heading">Михаил Ермаков</h3>
+                    <p class="texts">UI Designer</p>
+                    <ul class="social_list_team">
+                        <li class="social_item_team">
+                            <a href="https://www.instagram.com/" class="social_link_team">
+                                <svg class="social_icon_team" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-insta" ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social_item_team">
+                            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin" class="social_link_team">
+                                <svg class="social_icon_team" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-twit"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social_item_team">
+                            <a href="https://www.facebook.com/" class="social_link_team">
+                                <svg class="social_icon_team" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social_item_team">
+                            <a href="https://www.linkedin.com/" class="social_link_team">
+                                <svg class="social_icon_team" width="20" height="20">
+                                    <use href="images/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </section>
+        <section class="clients container">
+            <h2>Постоянные клиенты</h2>
+            <ul class="clients-list">
+                <li class="clients-wrap"><a href="#" class="clients-link"><svg class="clients-icon" width="106" height="60"><use href="images/symbol-defs.svg#icon-group"></use></svg></a></li>
+                <li class="clients-wrap"><a href="#" class="clients-link"><svg class="clients-icon" width="106" height="60"><use href="images/symbol-defs.svg#icon-group-1"></use></svg></a></li>
+                <li class="clients-wrap"><a href="#" class="clients-link"><svg class="clients-icon" width="106" height="60"><use href="images/symbol-defs.svg#icon-group-2"></use></svg></a></li>
+                <li class="clients-wrap"><a href="#" class="clients-link"><svg class="clients-icon" width="106" height="60"><use href="images/symbol-defs.svg#icon-group-3"></use></svg></a></li>
+                <li class="clients-wrap"><a href="#" class="clients-link"><svg class="clients-icon" width="106" height="60"><use href="images/symbol-defs.svg#icon-group-4"></use></svg></a></li>
+                <li class="clients-wrap"><a href="#" class="clients-link"><svg class="clients-icon" width="106" height="60"><use href="images/symbol-defs.svg#icon-group-5"></use></svg></a></li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="div-footer container">
+            <ul>
+                <li><a href="index.html" class="logo"><span class="leters">Web</span>Studio</a></li>
+                <li><p class="texte">г. Киев, пр-т Леси Украинки, 26</p></li>
+                <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                <li><a href="tel:+38 096 111 11 11" class="link">+38 096 111 11 11</a></li>
+            </ul>
+            <div class="wrap_social_footer">
+                <h4 class="text_footer">присоединяйтесь</h4>
+                <ul class="social_list_team">
+                <li class="social_item_team">
+                    <a href="https://www.instagram.com/" class="social_link_footer">
+                        <svg class="social_icon_team" width="20" height="20">
+                            <use href="images/symbol-defs.svg#icon-insta" ></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social_item_team">
+                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin" class="social_link_footer">
+                        <svg class="social_icon_team" width="20" height="20">
+                            <use href="images/symbol-defs.svg#icon-twit"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social_item_team">
+                    <a href="https://www.facebook.com/" class="social_link_footer">
+                        <svg class="social_icon_team" width="20" height="20">
+                            <use href="images/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social_item_team">
+                    <a href="https://www.linkedin.com/" class="social_link_footer">
+                        <svg class="social_icon_team" width="20" height="20">
+                            <use href="images/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
