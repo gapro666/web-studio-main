@@ -31,39 +31,40 @@
     <main>
         <section class="hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>   
-            <button class="hero-button" aria-activedescendant="open" >Заказать услугу</button>
-            <button type="button" class="btn" data-action="open-modal">Відкрити модалку</button>
+            <button type="button" class="hero-button btn" data-action="open-modal">Заказать услугу</button>
             <div class="backdrop">
               <div class="modal">
-                <button type="button" class="button" data-action="close-modal">X</button>
-                <h4 class="Модальное-окно">Оставьте свои данные, мы вам перезвоним</h4>
-                <form>
-                  <label>
+                <button type="button" class="button-close" data-action="close-modal"><svg class="social_icon_team" width="20" height="20">
+                    <use href="images/symbol-defs.svg#icon-close" ></use></svg></button>
+                <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+                <form class="hero-form">
+                  <label class="hero-label">
                     Имя
-                    <input type="text" name="username" />
+                    <input class="hero-input" type="text" name="username" placeholder="" />
+                  <svg class="input-icon" width="20" height="20" >
+                    <use href="images/symbol-defs.svg#input-person" ></use>
+                  </svg>
+                </label>
+                  <label class="hero-label">
+                    Телефон
+                    <input class="hero-input" type="tel" name="phone" placeholder="" />
                   </label>
-                  <label>
+                  <label class="hero-label">
                     Почта
-                    <input type="tel" name="phone" />
+                    <input class="hero-input" type="email" name="email" placeholder="" />
                   </label>
-                  <label>
-                    Почта
-                    <input type="email" name="email" />
-                  </label>
-                  <label>
+                  <label class="hero-label">
                     Комментарий
-                    <textarea name="feedback" rows="5" placeholder="Enter your message here..."></textarea>
+                    <textarea class="hero-input" name="feedback" rows="5" placeholder="Введите текст" ></textarea>
                   </label>
-                  <label>
-                    <input type="checkbox" name="" checked />
-                    Соглашаюсь с рассылкой и принимаю
-                    <a href="#">Условия договора</a>
+                  <label class="hero-checkbox">
+                    <input type="checkbox" name="checkbox" checked  class="checkbox"/>
+                    Соглашаюсь с рассылкой и принимаю <a href="#"> Условия договора</a>
                   </label>
-                  <button class="hero-button">Отправить</button>
+                  <button type="submit" class="hero-button">Отправить</button>
                 </form>
               </div>
             </div>
-            <script type="module" src="modal.js"></script>
         </section>
         <section class="description container">
             <ul class="list-inline">
@@ -284,5 +285,6 @@
         </div>
 
     </footer>
+<script type="module" src="modal.js"></script>
 </body>
 </html>
